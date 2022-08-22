@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100;1,600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    /* Her yerde istifade edirik deye burda yaziriq */
+}
+
+body {
+    background-color: white;
+}
+
+/* div h1,h2,h3 {
+    color: rgb(4, 128, 128);
+}
+
+/*
+div h1 {
+    color: rgb(4, 128, 128);
+}
+div h2 {
+    color: rgb(4, 128, 128);
+}
+div h3 {
+    color: rgb(4, 128, 128);
+} 
+*/
+
+/* Bu cur tek-tek yazmaq yanlisdir, h1,h2,h3 kimi yazmaq lazimdir */
+
+/* * {
+    color: red;
+} */
+/* Burada * - her sey demekdir, biz h1,h2,h3 -e artiq reng vermisik deye onlar deyismeyecek */
+
+/* Amma !important atsaq, o zaman h1,h2,h3-ler de qirmizi olacaq */
+
+/* div {
+    background-color: rgb(107, 18, 18);
+    border: 3px solid green; 
+    border: 3px solid green transparent;
+     transparent background rengi ile eyni edir, sadece olculeri qalir.
+}
+
+div h1 {
+    background-color: rgb(17, 17, 37);
+    border-radius: 30px;
+    /* border-in kenarlarina eyrilik verir 
+}
+*/
+
+
+
+/* Burada 2 usul var, font-family - ini daxil etmek:
+1)  link ( CDN ) 
+2)  @import
+Eger link atsaq hem html-de, hem de css-de yazmaliyiq.
+Ona gore de import atmaliyiq ki, daha rahat olsun
+*/
+
+
+
+.clubs h1 {
+    color: blueviolet;
+}
+
+#circle {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 50%;
+    /* 50% ve 100% dairedi */;
+    background-color: blueviolet;
+    /* margin: 10px 20px; */
+    /* Menasi- yəni, top ve bottom-dan 10px, left ve right-dan 20px ayrilir. */
+    
+    margin: 20px auto;
+    /* auto- merkeze getirir */
+
+    padding: 20px 30px;
+
+    /* box-sizing:  
+    sadece padding-e aiddir,
+    default - content-box du ( yeni, kicden kenara dogru )
+    border-box is kenardan ice dogru */
+
+    box-sizing: border-box ;
+
+
+
+}
+
+#circle p {
+    color: black;
+    /* font-size: 30px; */
+    font-size: 2em;
+    /* Indi px ile yazmaq yaxsi deyil, ona gore biz em ve rem ile islemek lazimdi */
+    text-align: center ;
+}
+
+.link a{
+    font-size: 50px;
+    color: black;
+    text-decoration: none;
+    /*text-decoration-altxettinolubolmamasidi*/border: 1px solid black;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    transition: 0.5s all;
+    /* ustune gelende hover funksiyasinin zamanini gosterir */
+}
+
+.link a:hover {
+    color: blue;
+    background-color: yellowgreen;
+    border: none;
+    cursor: not-allowed;
+}
+
+.image img {
+    /*width: 700px;
+    */width: 100%;
+    /*Ekranintamolcusunututur*/height: 700px;
+    object-fit: cover;
+    /*Encoxistifadeolunan-covercontainsadece20pxin30pxlemeselen,yeniicon-lardaistifadeolunur*/border-radius: ;
+    -webkit-border-radius:12px;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+
+.clubs {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* nece gorsenmeyi */
+    height: 800px;
+    background-attachment: fixed ;
+}
